@@ -2,8 +2,6 @@
 # .bashrc
 #
 
-$Id$
-
 KERNEL=`uname`
 
 # Customizations for OS used
