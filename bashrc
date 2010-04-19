@@ -85,6 +85,10 @@ bind "set show-all-if-ambiguous On" # this allows you to automatically show comp
 ssh () { 
   /usr/bin/ssh $*
   PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}:${PWD/#$HOME/~}"; echo -ne "\007"'
+
+  if [ $TERM == 'xterm' ]; then
+    echo -ne "\eklocal\e\\"
+  fi
 }
 
 # CD commands
