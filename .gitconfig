@@ -1,0 +1,13 @@
+[user]
+	name = 
+	email = 
+[core]
+	pager = less -FXRS
+[color]
+	pager = true
+	status = auto
+	branch = auto
+	interactive = auto
+	diff = auto
+[diff]
+	tool = vimdiff
